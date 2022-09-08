@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background-color: #d6e2f0;
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+  box-shadow: 8px 8px 30px 3px #88888832;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 470px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 8px 8px 30px 3px #88888832;
+  border-radius: 18px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+img {
+  width: 280px;
+  height: 280px;
+  border-radius: 18px;
+}
+p {
+  padding: 0px 20px;
+  font-size: 15px;
+  color: rgba(119, 136, 153, 0.802);
+}
+h2 {
+  font-size: 20px;
+  padding: 19px 20px;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  .card {
+    height: 600px;
+    width: 370px;
+  }
+  img {
+    height: 350px;
+    width: 350px;
+  }
+  p {
+    padding: 0px 0.5em;
+    font-size: 1.2em;
+  }
+  h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 1.4em 0.5em;
+  }
+}
+/* Media Query for mobile width 375px and high */
+@media screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .card {
+    height: 535px;
+    width: 325px;
+  }
+  img {
+    width: 295px;
+    height: 295px;
+  }
+  p {
+    padding: 0px 20px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 19px 20px;
+  }
+}
